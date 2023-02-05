@@ -6,7 +6,7 @@ import java.time.LocalTime;
 import java.time.ZonedDateTime;
 
 
-public abstract class appointment {
+public class appointment {
     //Variables
     private int appID;
     private String title;
@@ -19,7 +19,8 @@ public abstract class appointment {
     private int customerID;
     private int userID;
 
-    public appointment() {
+    public appointment(int appID, String title, String description, String location, String contact, String type, ZonedDateTime start, ZonedDateTime end, int customerID, int userID) {
+
     }
 
     public int getAppID() {
