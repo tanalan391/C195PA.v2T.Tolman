@@ -20,6 +20,16 @@ public class appointment {
     private int userID;
 
     public appointment(int appID, String title, String description, String location, String contact, String type, ZonedDateTime start, ZonedDateTime end, int customerID, int userID) {
+        this.appID = appID;
+        this.title = title;
+        this.description = description;
+        this.location = location;
+        this.contact = contact;
+        this.type = type;
+        this.start = start;
+        this.end = end;
+        this.customerID = customerID;
+        this.userID = userID;
 
     }
 

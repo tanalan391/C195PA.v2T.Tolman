@@ -31,6 +31,8 @@ public class AppointmentDAOImp {
                 int customerID = rs.getInt("Customer_ID");
                 int userID = rs.getInt("User_ID");
 
+                appointment ap = new appointment(appID, title, description, location, contact, type, start, end, customerID, userID );
+                appointmentList.add(ap);
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
