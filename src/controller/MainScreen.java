@@ -1,6 +1,6 @@
 package controller;
 
-import DAO.AppointmentDAOImp;
+//import DAO.AppointmentDAOImp;
 import DAO.CustomerDAOImp;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -22,9 +22,9 @@ public class MainScreen implements Initializable {
             System.out.println("Customer ID: " + c.getID() + "Name: " + c.getName() + "Address: " + c.getAddress() + "Postal Code: "+ c.getPostalCode() + "Phone Number: " + c.getPhoneNumber());
         }
     }
-
+/*
     public void showAppointments(ActionEvent actionEvent){
         ObservableList<appointment> appointmentList = AppointmentDAOImp.getAllAppointments();
 
-    }
+    }*/
 }

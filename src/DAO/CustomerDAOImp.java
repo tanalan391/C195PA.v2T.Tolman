@@ -12,7 +12,7 @@ public class CustomerDAOImp {
         ObservableList<customers> customerList = FXCollections.observableArrayList();
 
         try {
-            String sql = "SELECT * FROM CUSTOMERS";
+            String sql = "SELECT * FROM client_schedule.customers";
 
             PreparedStatement ps = DBConnection.getConnection().prepareStatement(sql);
 

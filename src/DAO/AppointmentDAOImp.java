@@ -1,4 +1,4 @@
-package DAO;
+/*package DAO;
 
 import javafx.collections.ObservableList;
 import model.appointment;
@@ -13,7 +13,7 @@ public class AppointmentDAOImp {
         ObservableList<appointment> appointmentList = FXCollections.observableArrayList();
 
         try{
-            String sql = "SELECT * FROM APPOINTMENTS";
+            String sql = "SELECT * FROM client_schedule.appointments";
 
             PreparedStatement ps = DBConnection.getConnection().prepareStatement(sql);
 
@@ -26,7 +26,7 @@ public class AppointmentDAOImp {
                 String location = rs.getString("Location");
                 String contact = rs.getString("Contact");
                 String type = rs.getString("Type");
-                ZonedDateTime start = rs.getDate("Start");
+                DateTime start = rs.getDate("Start");
                 ZonedDateTime end = rs.getDate("End");
                 int customerID = rs.getInt("Customer_ID");
                 int userID = rs.getInt("User_ID");
@@ -43,3 +43,4 @@ public class AppointmentDAOImp {
     }
 
 }
+*/

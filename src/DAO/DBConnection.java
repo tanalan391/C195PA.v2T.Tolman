@@ -4,7 +4,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class DBConnection {
+public abstract class DBConnection {
  private static final String protocol = "jdbc";
      private static final String vendor = ":mysql:";
          private static final String location = "//localhost/";
@@ -25,11 +25,11 @@ public class DBConnection {
               System.out.println("Connection successful!");
           }
                   catch(ClassNotFoundException e) {
-                      //System.out.println("Error:" + e.getMessage());
+                      System.out.println("Error:" + e.getMessage());
                       e.printStackTrace();
                   }
                   catch(SQLException e) {
-                      //System.out.println("Error:" + e.getMessage());
+                      System.out.println("Error:" + e.getMessage());
                       e.printStackTrace();
                   }
           return connection;
