@@ -20,9 +20,9 @@ public class Login implements Initializable {
     public TextField usernameField;
 
     public void onLoginButton(ActionEvent actionEvent) {
-        try{
-           // String u = usernameField.getText();
-           // String p = passwordField.getText();
+       try{
+           //String u = usernameField.getText();
+           //String p = passwordField.getText();
             Parent root = FXMLLoader.load(getClass().getResource("/view/MainScreen.fxml"));
             Stage stage = (Stage)((Button)actionEvent.getSource()).getScene().getWindow();
             Scene scene = new Scene(root, 600,400);
@@ -32,7 +32,7 @@ public class Login implements Initializable {
 
 
         } catch (Exception e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "Incorrect Username or Password!");
+           Alert alert = new Alert(Alert.AlertType.ERROR, "Incorrect Username or Password!");
             alert.showAndWait();
         }
     }
