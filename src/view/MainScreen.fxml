@@ -4,36 +4,36 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainScreen">
+<AnchorPane prefHeight="400.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainScreen">
     <children>
-        <TabPane prefHeight="500.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE">
+        <TabPane prefHeight="500.0" prefWidth="1050.0" tabClosingPolicy="UNAVAILABLE">
             <tabs>
                 <Tab text="Customers">
                     <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <AnchorPane minHeight="180.0" minWidth="1050.0" prefHeight="180.0" prefWidth="1050.0">
                             <children>
-                                <TableView layoutY="75.0" prefHeight="400.0" prefWidth="500.0">
+                                <TableView layoutY="75.0" prefHeight="400.0" prefWidth="600.0">
                                     <columns>
                                         <TableColumn fx:id="custIDCol" prefWidth="43.0" text="ID" />
                                         <TableColumn fx:id="custNameCol" prefWidth="153.0" text="Name" />
-                                        <TableColumn fx:id="custAddressCol" prefWidth="128.0" text="Address" />
-                                        <TableColumn fx:id="custPostalCodeCol" prefWidth="76.0" text="Postal Code" />
-                                        <TableColumn fx:id="custPhoneNumberCol" prefWidth="99.0" text="Phone Number" />
+                                        <TableColumn fx:id="custAddressCol" prefWidth="152.0" text="Address" />
+                                        <TableColumn fx:id="custPostalCodeCol" prefWidth="93.0" text="Postal Code" />
+                                        <TableColumn fx:id="custPhoneNumberCol" prefWidth="158.0" text="Phone Number" />
                                     </columns>
                                 </TableView>
                                 <TextField layoutX="25.0" layoutY="25.0" />
                                 <Button fx:id="custSearchButton" layoutX="215.0" layoutY="25.0" mnemonicParsing="false" onAction="#onCustSearch" text="Search" />
-                        <Button layoutX="563.0" layoutY="75.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="110.0" text="New">
+                        <Button layoutX="750.0" layoutY="75.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="110.0" text="New">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Button>
-                        <Button layoutX="563.0" layoutY="188.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="110.0" text="Edit">
+                        <Button layoutX="750.0" layoutY="188.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="110.0" text="Edit">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Button>
-                        <Button layoutX="563.0" layoutY="291.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="110.0" text="Delete">
+                        <Button layoutX="750.0" layoutY="291.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="110.0" text="Delete">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -44,30 +44,35 @@
                 </Tab>
                 <Tab text="Appointments">
                     <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1050.0">
                             <children>
-                                <TableView layoutY="75.0" prefHeight="400.0" prefWidth="500.0">
+                                <TableView layoutY="75.0" prefHeight="400.0" prefWidth="800.0">
                                     <columns>
                                         <TableColumn fx:id="custIDCol" prefWidth="43.0" text="ID" />
-                                        <TableColumn fx:id="custNameCol" prefWidth="153.0" text="Name" />
-                                        <TableColumn fx:id="custAddressCol" prefWidth="128.0" text="Address" />
-                                        <TableColumn fx:id="custPostalCodeCol" prefWidth="76.0" text="Postal Code" />
-                                        <TableColumn fx:id="custPhoneNumberCol" prefWidth="99.0" text="Phone Number" />
+                                        <TableColumn fx:id="custNameCol" prefWidth="93.0" text="Title" />
+                                        <TableColumn fx:id="custAddressCol" prefWidth="118.0" text="Description" />
+                                        <TableColumn fx:id="custPostalCodeCol" prefWidth="98.0" text="Location" />
+                                        <TableColumn fx:id="custPhoneNumberCol" prefWidth="97.0" text="Contact" />
+                              <TableColumn fx:id="custPhoneNumberCol1" prefWidth="83.0" text="Type" />
+                              <TableColumn fx:id="custPhoneNumberCol11" prefWidth="61.0" text="Start" />
+                              <TableColumn fx:id="custPhoneNumberCol111" prefWidth="51.0" text="End" />
+                              <TableColumn fx:id="custPhoneNumberCol1111" prefWidth="90.0" text="Customer ID" />
+                              <TableColumn fx:id="custPhoneNumberCol11111" prefWidth="65.0" text="User ID" />
                                     </columns>
                                 </TableView>
                                 <TextField layoutX="25.0" layoutY="25.0" />
                                 <Button fx:id="apptSearchButton" layoutX="215.0" layoutY="25.0" mnemonicParsing="false" onAction="#onApptSearch" text="Search" />
-    <Button layoutX="563.0" layoutY="75.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="110.0" text="New">
+    <Button layoutX="850.0" layoutY="75.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="110.0" text="New">
         <font>
             <Font size="18.0" />
         </font>
     </Button>
-    <Button layoutX="563.0" layoutY="188.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="110.0" text="Edit">
+    <Button layoutX="850.0" layoutY="188.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="110.0" text="Edit">
         <font>
             <Font size="18.0" />
         </font>
     </Button>
-    <Button layoutX="563.0" layoutY="291.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="110.0" text="Delete">
+    <Button layoutX="850.0" layoutY="291.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="110.0" text="Delete">
         <font>
             <Font size="18.0" />
         </font>
@@ -76,7 +81,7 @@
 </children></AnchorPane>
                     </content>
                 </Tab>
-                <Tab text="Scheduling">
+                <Tab text="Calendar">
                     <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                     </content>

@@ -6,7 +6,7 @@ import java.sql.*;
 import javafx.collections.FXCollections;
 
 
-public class CustomerDAOImp {
+public abstract class CustomerDAOImp {
 
     public static ObservableList<customers> getAllCustomers(){
         ObservableList<customers> customerList = FXCollections.observableArrayList();
@@ -35,4 +35,38 @@ public class CustomerDAOImp {
 
         return customerList;
     }
+
+
+    public static int insert(String name, int divisionID) throws SQLException{
+
+            String sql = "INSERT INTO client_schedule.customers (Customer_Name, Division_ID) VALUES(?,? )";
+            PreparedStatement ps = DBConnection.getConnection().prepareStatement(sql);
+            ps.setString(1, name);
+            ps.setInt(2,divisionID);
+            int rowsAffected = ps.executeUpdate();
+
+
+        return rowsAffected;
+    }
+
+    public static int update(int customerID, String name) throws SQLException{
+
+        String sql = "UPDATE client_schedule.customers SET Customer_Name = ? WHERE Customer_ID = ?";
+        PreparedStatement ps = DBConnection.getConnection().prepareStatement(sql);
+        ps.setInt(2, customerID);
+        ps.setString(1, name);
+        int rowsAffected = ps.executeUpdate();
+        return rowsAffected;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
